@@ -1,19 +1,30 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  BrowserRouter,
+} from 'react-router-dom';
+import { NavbarComponent } from './components/Navbar';
+import { HomePage } from './pages/Homepage';
 
 function App() {
   return (
     <div>
-      <Navbar />
-      {/*<Switch>*/}
-      {/*  <Route path="/login">*/}
-      {/*    <Login />*/}
-      {/*  </Route>*/}
-      {/*  <Route path="/signup">*/}
-      {/*    <Signup />*/}
-      {/*  </Route>*/}
-      {/*</Switch>*/}
+      <BrowserRouter>
+        <Switch>
+          {/*<Route path="/login">*/}
+          {/*  <Login />*/}
+          {/*</Route>*/}
+          {/*<Route path="/signup">*/}
+          {/*  <Signup />*/}
+          {/*</Route>*/}
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
