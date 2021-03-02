@@ -3,10 +3,10 @@ import { WithLayoutContainer } from './withLayout.styles';
 import { NavbarComponent } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 
-export const withLayout = (props) => (
+export const withLayout = (WrappedComponent) => (props) => (
   <WithLayoutContainer>
     <NavbarComponent />
-    {props.children}
+    <WrappedComponent />
     <Footer />
   </WithLayoutContainer>
 );

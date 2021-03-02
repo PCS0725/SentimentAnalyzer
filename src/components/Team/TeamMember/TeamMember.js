@@ -16,11 +16,22 @@ export const TeamMember = ({
   email,
   keepsDoing,
   socialLinks,
+  image,
 }) => {
   return (
-    <div>
+    <div style={{ padding: '10px 0' }}>
       <Card>
-        <CardImg top width="100%" src="1.jpg" alt="Card image cap" />
+        <div className="d-flex justify-content-center mt-3">
+          <CardImg
+            style={{ maxWidth: '200px', height: 'auto' }}
+            top
+            width="100%"
+            src={image}
+            alt="Card image cap"
+            className="rounded-circle "
+          />
+        </div>
+
         <CardBody>
           <CardTitle tag="h5">{name}</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">
@@ -29,22 +40,33 @@ export const TeamMember = ({
             {email}
           </CardSubtitle>
           <CardText>{keepsDoing}</CardText>
-          <Button>Button</Button>
         </CardBody>
-        <CardFooter className="text-muted">
+        <CardFooter className="text-muted d-flex justify-content-center">
           <div style={{ display: 'flex' }}>
             {socialLinks?.github && (
-              <a target="_blank" href={socialLinks.github}>
+              <a
+                style={{ padding: '0 5px' }}
+                target="_blank"
+                href={socialLinks.github}
+              >
                 <GitHub />
               </a>
             )}
             {socialLinks?.instagram && (
-              <a target="_blank" href={socialLinks.instagram}>
+              <a
+                style={{ padding: '0 5px' }}
+                target="_blank"
+                href={socialLinks.instagram}
+              >
                 <Instagram />
               </a>
             )}
             {socialLinks?.twitter && (
-              <a target="_blank" href={socialLinks.twitter}>
+              <a
+                style={{ padding: '0 5px' }}
+                target="_blank"
+                href={socialLinks.twitter}
+              >
                 <Twitter />
               </a>
             )}

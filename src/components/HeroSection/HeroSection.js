@@ -1,19 +1,28 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 export const HeroSection = (props) => {
   return (
     <div>
-      <Jumbotron>
-        <h1 className="display-3">Welcome to Sentiment Analyzer</h1>
-        <p className="lead">Find Out What Customers are thinking about you</p>
-        <hr className="my-2" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
+      <Jumbotron
+        style={{
+          background: '#0029ba',
+        }}
+      >
+        <h1 className="display-4 text-center text-white">
+          Welcome to Sentiment Analyzer
+        </h1>
+        <p className="text-center text-white" style={{ fontSize: '20px' }}>
+          Find Out What Customers are thinking about you
         </p>
-        <p className="lead">
-          <Button color="primary">Start Now</Button>
+
+        <p className="lead text-center">
+          <Link to="/process">
+            <Button color="primary" size="lg">
+              Start Now
+            </Button>
+          </Link>
         </p>
       </Jumbotron>
     </div>

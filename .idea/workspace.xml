@@ -5,13 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f76310ed-bd1d-4e86-b9dd-b3bbd335f853" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardItem/CardItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardItem/CardItem.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardWidget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardWidget.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/FetchData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/FetchData.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constant_data/classification_algos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constant_data/feature_extraction_algo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Process/Process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Process/Process.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Process/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/TeamMember/TeamMember.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/TeamMember/TeamMember.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hoc/withLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Homepage/Homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Homepage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Quiqkart/quiqkart-merchant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/StepsComponent" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arshdeep kumar\Documents\final_year_project\src\components\StepsComponent" />
       <recent name="C:\Users\arshdeep kumar\Documents\final_year_project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,8 +105,19 @@
       <workItem from="1614418433555" duration="9506000" />
       <workItem from="1614490653853" duration="795000" />
       <workItem from="1614491507803" duration="11000" />
-      <workItem from="1614575828563" duration="1263000" />
+      <workItem from="1614575828563" duration="2820000" />
+      <workItem from="1614599646167" duration="594000" />
+      <workItem from="1614604491353" duration="1221000" />
+      <workItem from="1614631593591" duration="13562000" />
     </task>
+    <task id="LOCAL-00001" summary="fixups">
+      <created>1614579077878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614579077878</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +134,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixups" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixups" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FooterWrapper } from './Footer.styles';
 import { Col, Container, Row } from 'reactstrap';
-import { Link } from 'react-feather';
+import { Link } from 'react-router-dom';
 
 const footerLinks = [
   { text: 'About us', link: '/' },
@@ -11,11 +11,19 @@ const footerLinks = [
 export const Footer = React.memo((props) => (
   <FooterWrapper>
     <Container>
-      <Row>
+      <Row className="row">
+        <Col xs="6" md="3">
+          <div className="d-flex mt-3 mb-3 flex-column align-items-center">
+            {footerLinks.map(({ link, text }) => (
+              <Link to={link}>{text}</Link>
+            ))}
+          </div>
+        </Col>
         <Col
           xs="12"
-          md="4"
+          md="6"
           style={{ display: 'flex', flexDirection: 'column' }}
+          className="text-center text-md-left"
         >
           <h3>Sentiment Analyzer</h3>
           <p>
@@ -24,21 +32,13 @@ export const Footer = React.memo((props) => (
             license. Provide necessary attributes.
           </p>
         </Col>
-        <Col xs="6" md="4">
+        <Col xs="6" md="3">
           <img alt="heart image" src="/heart.webp" />
-        </Col>
-        <Col xs="6" md="4" className="d-flex flex-column">
-          {footerLinks.map(({ link, text }) => (
-            <Link to={link}>{text}</Link>
-          ))}
         </Col>
       </Row>
       <Row>
-        <Col className="d-flex justify-content-center">
-          <p style={{ textAlign: 'center' }}>
-            {' '}
-            &copy; Sentiment Analyzer 2021 Ltd.
-          </p>
+        <Col className="d-flex justify-content-center mt-3">
+          <p> &copy; Sentiment Analyzer 2021 Ltd.</p>
         </Col>
       </Row>
     </Container>

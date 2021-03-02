@@ -6,9 +6,10 @@ import { TeamDescription, TeamHeading } from './Team.styles';
 const teamMembersData = [
   {
     name: 'Arshdeep',
-    profession: 'Front End Developer',
+    profession: 'JS Developer',
     email: 'arshdeep.cs.17@nitj.ac.in',
     keepsDoing: 'Struggling with Javascript',
+    image: '/arshdeep.jpg',
     socialLinks: {
       github: 'https://github.com/arshkkk',
       instagram: 'instagram.com/arsh.kk',
@@ -20,6 +21,7 @@ const teamMembersData = [
     profession: 'Athlete',
     email: 'prabhats.cs.61@nitj.ac.in',
     keepsDoing: 'Eat Run Sleep and Repeat.. ',
+    image: '/prabhat.jpg',
     socialLinks: {
       github: 'https://github.com/arshkkk',
       instagram: 'instagram.com/arsh.kk',
@@ -30,6 +32,7 @@ const teamMembersData = [
     profession: 'Coder',
     email: 'shubhams.cs.85@nitj.ac.in',
     keepsDoing: 'Sleep Code Eat Repeat',
+    image: '/shubham.jpg',
     socialLinks: {
       github: 'https://github.com/arshkkk',
       instagram: 'instagram.com/arsh.kk',
@@ -40,6 +43,7 @@ const teamMembersData = [
     profession: 'Musician',
     email: 'chetanb.cs.23@nitj.ac.in',
     keepsDoing: 'Single Singer.. ',
+    image: '/chetan.jpg',
     socialLinks: {
       github: 'https://github.com/arshkkk',
       instagram: 'instagram.com/arsh.kk',
@@ -49,7 +53,8 @@ const teamMembersData = [
     name: 'Arbaaz Singh Grewal',
     profession: 'Musician',
     email: 'arbazs.cs.13@nitj.ac.in',
-    keepsDoing: 'Single Singer.. ',
+    keepsDoing: 'Porn Dealer.. ',
+    image: '/arbaz.jpg',
     socialLinks: {
       github: 'https://github.com/arshkkk',
       instagram: 'instagram.com/arsh.kk',
@@ -59,17 +64,13 @@ const teamMembersData = [
 export const Team = (props) => (
   <div>
     <Container>
-      <Row>
-        <TeamHeading>Team</TeamHeading>
-      </Row>
-      <Row>
-        <TeamDescription>
-          We are final year BTech students of Computer Science and Engineering
-          at NIT Jalandhar.
-        </TeamDescription>
-      </Row>
+      <TeamHeading className="text-center">Team</TeamHeading>
+      <TeamDescription className="text-center">
+        We are final year BTech students of Computer Science and Engineering at
+        NIT Jalandhar.
+      </TeamDescription>
 
-      <Row xs="1" md="2">
+      <Row xs="1" md="3" className="justify-content-center">
         {teamMembersData.map((t) => (
           <Col>
             <TeamMember {...t} />
