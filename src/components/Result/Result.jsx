@@ -80,7 +80,18 @@ export const Result = (props) => (
             Total
           </h3>
         </Col>
-
+        {/*<Col className="d-flex flex-column align-items-center">*/}
+        {/*  <CircleWrapper fill={'#dc3545 !important'}>*/}
+        {/*    {' '}*/}
+        {/*    <Circle />*/}
+        {/*    <DataWrapper>*/}
+        {/*      {props?.result?.insights?.total_neg.toFixed(0)}*/}
+        {/*    </DataWrapper>*/}
+        {/*  </CircleWrapper>*/}
+        {/*  <h3 className="text-secondary" style={{ marginTop: '70px' }}>*/}
+        {/*    Total Negative*/}
+        {/*  </h3>*/}
+        {/*</Col>*/}
         <Col className="d-flex flex-column align-items-center">
           <CircleWrapper fill={'#ffc107 !important'}>
             {' '}
@@ -92,13 +103,13 @@ export const Result = (props) => (
           <h3 className="text-secondary" style={{ marginTop: '70px' }}>
             Total Neutral
           </h3>
-        </Col>
+        </Col>{' '}
         <Col className="d-flex flex-column align-items-center">
           <CircleWrapper fill={'#dc3545 !important'}>
             {' '}
             <Circle />
             <DataWrapper>
-              {props?.result?.insights?.total_neg.toFixed(0)}
+              {props?.result?.insights?.total_neg.toFixed(1)}
             </DataWrapper>
           </CircleWrapper>
           <h3 className="text-secondary" style={{ marginTop: '70px' }}>

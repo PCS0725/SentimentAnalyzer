@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f76310ed-bd1d-4e86-b9dd-b3bbd335f853" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Result/Table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result/Table.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Result/Result.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result/Result.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Result/Result.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result/Result.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1614882903967" duration="21000" />
       <workItem from="1615181154298" duration="601000" />
       <workItem from="1615194023848" duration="5000" />
-      <workItem from="1615260824544" duration="12469000" />
+      <workItem from="1615260824544" duration="13422000" />
     </task>
     <task id="LOCAL-00001" summary="fixups">
       <created>1614579077878</created>
@@ -113,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615273228521</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixes in Table">
+      <created>1615273407173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615273407173</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +142,8 @@
     <MESSAGE value="fixups" />
     <MESSAGE value="/process and homepage complete" />
     <MESSAGE value="API Integration and Result Component Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="API Integration and Result Component Added" />
+    <MESSAGE value="Fixes in Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes in Table" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
