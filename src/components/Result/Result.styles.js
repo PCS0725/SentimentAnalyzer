@@ -14,8 +14,4 @@ export const DataWrapper = styled('h2')`
   margin-left: 90px;
   font-size: 36px;
   color: white;
-  @media (max-width: 600px) {
-    margin-top: -160px;
-    margin-left: 120px;
-  }
 `;
