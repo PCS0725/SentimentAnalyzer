@@ -86,7 +86,6 @@ export const StepsComponent = ({ setResult }) => {
       .then((res) => res.json())
       .then((res) => {
         setResult(res);
-        message.success('Request Fulfilled Successfully');
         setLoading(false);
         window.scrollTo(0, 400);
       })

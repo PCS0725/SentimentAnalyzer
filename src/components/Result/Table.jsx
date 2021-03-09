@@ -50,7 +50,7 @@ export const TableComponent = (props) => (
               <tr>
                 <td>{index + 1}</td>
                 <th scope="row">{word}</th>
-                {count}
+                <td>{count}</td>
               </tr>
             );
           })}
