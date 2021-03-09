@@ -1,0 +1,1 @@
+export { HowWeDoIt } from './HowWeDoIt';

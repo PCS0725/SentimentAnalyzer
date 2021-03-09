@@ -1,5 +1,4 @@
 export const feature_extraction_algo = [
-  'Word2Vec',
-  'Bag of Words',
-  'Skip Through Vectors',
+  { text: 'Word2Vec', value: 'w2vec' },
+  { text: 'Bag of Words', value: 'ngrams' },
 ];

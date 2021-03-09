@@ -1,53 +1,70 @@
 import { Steps, Button, message } from 'antd';
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Input, Label, Row } from 'reactstrap';
 import { FetchData } from './FetchData';
 import { StepsWrapper } from './StepsComponent.styles';
 import { feature_extraction_algo } from '../../constant_data/feature_extraction_algo';
 import { classification_algos } from '../../constant_data/classification_algos';
+import { BACKEND_URL } from '../../config';
 const { Step } = Steps;
 
-const SelectComponent = ({ list, heading }) => (
+const SelectComponent = ({ list, heading, value, setValue }) => (
   <Row>
     <Col xs={12} md={{ size: 8, offset: 2 }}>
       <Label for="story" style={{ fontSize: '24px' }}>
         {heading}
       </Label>
-      <Input type="select" name="story" id="story">
-        {list.map((value, index) => (
-          <option key={index}>{value}</option>
+      <Input
+        type="select"
+        name="story"
+        id="story"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+      >
+        {list.map(({ text, value }, index) => (
+          <option key={index} value={value}>
+            {text}
+          </option>
         ))}
       </Input>
     </Col>
   </Row>
 );
-const stepsComponent = [
-  {
-    title: 'Fetch Data',
-    content: <FetchData />,
-  },
-  {
-    title: 'Feature Extraction',
-    content: (
-      <SelectComponent
-        list={feature_extraction_algo}
-        heading={'Select Feature Extraction Algorithm'}
-      />
-    ),
-  },
-  {
-    title: 'Classification',
-    content: (
-      <SelectComponent
-        list={classification_algos}
-        heading={'Select Classification Algorithm'}
-      />
-    ),
-  },
-];
 
-export const StepsComponent = () => {
+export const StepsComponent = ({ setResult }) => {
   const [current, setCurrent] = React.useState(0);
+  const [feature, setFeature] = React.useState('ngrams');
+  const [classifier, setClassifier] = React.useState('nb');
+  const [loading, setLoading] = useState(false);
+
+  const stepsComponent = [
+    {
+      title: 'Fetch Data',
+      content: <FetchData />,
+    },
+    {
+      title: 'Feature Extraction',
+      content: (
+        <SelectComponent
+          list={feature_extraction_algo}
+          heading={'Select Feature Extraction Algorithm'}
+          value={feature}
+          setValue={setFeature}
+        />
+      ),
+    },
+    {
+      title: 'Classification',
+      content: (
+        <SelectComponent
+          list={classification_algos}
+          heading={'Select Classification Algorithm'}
+          value={classifier}
+          setValue={setClassifier}
+        />
+      ),
+    },
+  ];
 
   const next = () => {
     setCurrent(current + 1);
@@ -55,6 +72,28 @@ export const StepsComponent = () => {
 
   const prev = () => {
     setCurrent(current - 1);
+  };
+
+  const postDataToServer = () => {
+    setLoading(true);
+    fetch(`${BACKEND_URL}/classify`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+      body: JSON.stringify({ classifier, feature }),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        setResult(res);
+        message.success('Request Fulfilled Successfully');
+        setLoading(false);
+        window.scrollTo(0, 400);
+      })
+      .catch((e) => {
+        message.error(e.message);
+        setLoading(false);
+      });
   };
 
   return (
@@ -78,10 +117,11 @@ export const StepsComponent = () => {
               )}
               {current === stepsComponent.length - 1 && (
                 <Button
+                  disabled={loading}
                   type="primary"
-                  onClick={() => message.success('Processing complete!')}
+                  onClick={() => postDataToServer()}
                 >
-                  Done
+                  {loading ? 'Request in Process' : 'Done'}
                 </Button>
               )}
               {current > 0 && (

@@ -32,13 +32,13 @@ export const NavbarComponent = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto " navbar>
               <NavItem>
-                <NavLink href="/home">Home</NavLink>
+                <NavLink href="#">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/login">Login</NavLink>
+                <NavLink href="#">Login</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/home">
+                <NavLink href="#team">
                   <Link
                     className="bg-primary"
                     style={{
@@ -53,7 +53,7 @@ export const NavbarComponent = (props) => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/home">Contact</NavLink>
+                <NavLink href="/#team">Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

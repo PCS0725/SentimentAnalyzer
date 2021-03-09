@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withLayout } from '../../hoc/withLayout';
 import { StepsComponent } from '../../components/StepsComponent/StepsComponent';
 import {
@@ -11,7 +11,7 @@ import {
   BarChart2,
 } from 'react-feather';
 import { CardWidget } from '../../components/CardWidget';
-import { Container } from 'reactstrap';
+import { Result } from '../../components/Result';
 const cardData = [
   {
     logo: <MapPin />,
@@ -67,9 +67,11 @@ const cardData2 = [
 ];
 
 export const Process = withLayout(() => {
+  const [result, setResult] = useState(null);
   return (
     <div>
-      <StepsComponent />
+      <StepsComponent setResult={(result) => setResult(result)} />
+      {result && <Result result={result} />}
       <CardWidget
         heading="Word Embeddings"
         list={cardData}

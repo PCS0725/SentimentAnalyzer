@@ -3,6 +3,7 @@ import { colors } from '../../colors';
 
 export const TeamHeading = styled('h2')`
   color: ${colors.black_font};
+  text-align: center;
   width: 100%;
 `;
 

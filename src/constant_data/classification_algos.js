@@ -1,6 +1,5 @@
 export const classification_algos = [
-  'Naive Bayes',
-  'Logistic Regression',
-  'Neural Network',
-  'Support Vector Machine',
+  { text: 'Naive Bayes', value: 'nb' },
+  { text: 'Rule Based', value: 'rb' },
+  { text: 'Logistic Regression', value: 'lr' },
 ];

@@ -5,38 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f76310ed-bd1d-4e86-b9dd-b3bbd335f853" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardItem/CardItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardItem/CardItem.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardItem/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardWidget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/CardWidget.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardWidget/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/FetchData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/FetchData.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StepsComponent/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constant_data/classification_algos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constant_data/feature_extraction_algo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Process/Process.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Process/Process.styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Process/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HowWeDoIt/HowWeDoIt.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HowWeDoIt/HowWeDoIt.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HowWeDoIt/Item/Item.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HowWeDoIt/Item/Item.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HowWeDoIt/Item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HowWeDoIt/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Result/Result.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Result/Result.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Result/Table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Result/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WhyUs/WhyUs.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WhyUs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/HeroSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavbarComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/FetchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepsComponent/FetchData/FetchData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepsComponent/StepsComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Team/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Team/Team.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Team/TeamMember/TeamMember.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/TeamMember/TeamMember.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/withLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constant_data/classification_algos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant_data/classification_algos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constant_data/feature_extraction_algo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant_data/feature_extraction_algo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Homepage/Homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Process/Process.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Process/Process.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/StepsComponent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fiverr/Mpkfresh/kiatami" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -109,6 +101,17 @@
       <workItem from="1614599646167" duration="594000" />
       <workItem from="1614604491353" duration="1221000" />
       <workItem from="1614631593591" duration="13562000" />
+      <workItem from="1614657047588" duration="434000" />
+      <workItem from="1614687816943" duration="27000" />
+      <workItem from="1614697367908" duration="703000" />
+      <workItem from="1614773568878" duration="23000" />
+      <workItem from="1614774748239" duration="3036000" />
+      <workItem from="1614781898278" duration="249000" />
+      <workItem from="1614863600505" duration="1250000" />
+      <workItem from="1614882903967" duration="21000" />
+      <workItem from="1615181154298" duration="601000" />
+      <workItem from="1615194023848" duration="5000" />
+      <workItem from="1615260824544" duration="12242000" />
     </task>
     <task id="LOCAL-00001" summary="fixups">
       <created>1614579077878</created>
@@ -117,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614579077878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="/process and homepage complete">
+      <created>1614648376723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614648376723</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixups" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixups" />
+    <MESSAGE value="/process and homepage complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="/process and homepage complete" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

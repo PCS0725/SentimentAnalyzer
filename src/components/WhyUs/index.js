@@ -1,0 +1,1 @@
+export { WhyUs } from './WhyUs';
